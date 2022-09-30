@@ -3,10 +3,8 @@ using namespace std;
 
 void merge(int arr[], int beg, int mid, int end) {
     int i, j, k;
-    // cout << "Here: " << beg << " " << mid << " " << end << endl;
     int n1 = mid - beg + 1;
     int n2 = end - mid;
-    // cout << n1 << " " << n2 << endl;
 
     int temp1[n1], temp2[n2]; // Temporary Arrays
     for (int i = 0; i < n1; i++)
@@ -61,18 +59,18 @@ int main() {
         cin >> arr[i];
     }
 
-    // cout << "\nUnsorted Array: ";
-    // for (int i = 0; i < n; i++)     // Printing Unsorted array
-    // {
-    //     cout << arr[i] << " ";
-    // }
+    cout << "\nUnsorted Array: ";
+    for (int i = 0; i < n; i++)     // Printing Unsorted array
+    {
+        cout << arr[i] << " ";
+    }
     
     mergeSort(arr, 0, n-1);
     
-    // cout << "\nSorted Array: ";
-    // for (int i = 0; i < n; i++)     // Printing Sorted Array
-    // {
-    //     cout << arr[i] << " ";
-    // }
+    cout << "\nSorted Array: ";
+    for (int i = 0; i < n; i++)     // Printing Sorted Array
+    {
+        cout << arr[i] << " ";
+    }
     
 }
