@@ -57,7 +57,7 @@ int main()
     printf("\nUnsorted Array: ");
     display(arr, n);
     
-    quickSort(arr, 0, 4);
+    quickSort(arr, 0, n);
 
     printf("\nSorted Array: ");
     display(arr, n);
